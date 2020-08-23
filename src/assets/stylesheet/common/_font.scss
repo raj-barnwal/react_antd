@@ -1,0 +1,9 @@
+@import "mixin";
+$fixed: "./../../../assets/fonts/";
+
+@include font-type(MontserratBold, '#{$fixed}montserrat-bold-webfont.woff');
+@include font-type(MontserratSemiBold, '#{$fixed}montserrat-semibold-webfont.woff');
+@include font-type(MontserratLight, '#{$fixed}montserrat-light-webfont.woff');
+@include font-type(MontserratMedium, '#{$fixed}montserrat-medium-webfont.woff');
+@include font-type(MontserratRegular, '#{$fixed}montserrat-regular-webfont.woff');
+@include font-type(MontserratThin, '#{$fixed}montserrat-thin-webfont.woff');

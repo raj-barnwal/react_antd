@@ -1,0 +1,45 @@
+@import "varibale";
+
+// font face mixin
+
+@mixin font-type($name, $location) {
+  @font-face {
+    font-family: $name;
+    src: url($location)
+  }
+}
+
+// conditional scss for media query
+@mixin break-point($point) {
+  @if $point == tablet-view {
+    @media screen and (min-width: 769px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == mobile-view {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $point == ie {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      @content;
+    }
+  }
+}
+
+// global scroll css
+@mixin scrollStyle {
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(#b9becc, 0.5);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(#b9becc, 0.8);
+  }
+}
+

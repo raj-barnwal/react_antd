@@ -1,0 +1,26 @@
+@import "common/varibale";
+@import "common/font";
+@import "common/gutter";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $font-default-color;
+  font-family: -apple-system, MontserratRegular,sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  background-color: $black;
+  color: $white;
+  font-family: MontserratSemiBold, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
